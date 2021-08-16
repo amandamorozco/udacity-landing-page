@@ -1,0 +1,124 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manipulating the DOM</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list"></ul>
+      </nav>
+    </header>
+    <main>
+      <header class="main__hero">
+        <h1>Small Steps, Big Change</h1>
+      </header>
+      <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <section id="section1" data-nav="Section 1" class="your-active-class">
+        <div class="landing__container">
+          <h2>The First (Small) Step</h2>
+          <p>
+            You’re tired of the same old mealtime routine--go to the fridge,
+            rummage around between items of questionable freshness, too many
+            leftover containers… well, you get the idea. You’re overwhelmed and
+            hungry--and so is everyone else in your house. So you go for what’s
+            easy and quick. <br />
+            <br />
+            Or, you want to do what you can to care for the planet, but are
+            overwhelmed by the amount of products out there to “help you” (and
+            are pretty sure most of those items are just creating more clutter
+            and adding to the problem) and by “solutions” that require way too
+            much thinking and planning that just don’t fit into your busy
+            lifestyle. <br />
+            <br />
+            Not sure where to begin, or even if it’s worth the effort? <br />
+            <br />
+            Small Steps, Big Change is all about how to eat (and live)
+            healthier, all while caring for the planet (and your wallet).
+            Healthy change doesn’t have to be difficult, or expensive. It also
+            doesn’t have to be complicated. But if you can take one small step
+            today, and then tomorrow, and it becomes a part of your routine…
+            well, the benefits can be exponential. So let’s get started--one
+            small, simple step at a time. Each of the steps we’ll discuss here
+            are designed to be simple and stand alone--no need for a complete
+            overhaul of your home or routine. So you can adopt the ones that
+            make sense for you, and get started. The key is to take those small
+            steps so you can get headed towards big change.
+          </p>
+        </div>
+      </section>
+      <section id="section2" data-nav="Section 2">
+        <div class="landing__container">
+          <h2>Top Posts</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            fermentum metus faucibus lectus pharetra dapibus. Suspendisse
+            potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget
+            lacinia ex.
+          </p>
+          <div class="card">
+            <div class="post">
+              <img
+                class="post-image"
+                src="https://images.pexels.com/photos/631986/pexels-photo-631986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              />
+              <div class="post-content">
+                <p class="post-header">
+                  <a href="#">Your Journey Starts with a Single Step</a>
+                </p>
+                <p class="post-text">
+                  “A journey of a thousand miles begins with one step.” We can
+                  all probably think of at least one way in which we should be
+                  living or eating healthier, but it can seem overwhelming to
+                  make big changes to our diet or lives. What if instead we
+                  chose each day to take just one small step?
+                  <button>Read more</button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section3" data-nav="Section 3">
+        <div class="landing__container">
+          <h2>Sign up Now</h2>
+          <p>
+            Don't miss out--sign up below to receive updates on our latest
+            posts, tasty recipes, and upcoming announcements.
+          </p>
+
+          <p>
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdJaC3Olw0NIRRU2CplnQMeGoCKu7I0a8Z8ZrI90coovcWGUA/viewform?embedded=true"
+              width="100%"
+              height="600"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Loading…</iframe
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer">
+      <p>&copy Udacity</p>
+    </footer>
+  </body>
+</html>
